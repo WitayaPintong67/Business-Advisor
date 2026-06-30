@@ -1,0 +1,11 @@
+streamlit>=1.45
+openai>=1.30
+python-docx
+pandas
+numpy
+numpy-financial
+xlsxwriter
+openpyxl
+markdown
+python-dotenv
+fpdf
