@@ -798,18 +798,21 @@ with cols[0]:
     if st.button("▶️ Resume / Continue Plan", use_container_width=True):
 
         current = st.session_state.workflow_stage
+    
 
         if current == "not_started":
-            st.session_state.stage = "
+            st.session_state.stage = "business_info"
+            st.session_state.workflow_stage = "business_info"
             append_assistant(
                 "ยินดีต้อนรับครับ เราจะจัดทำแผนธุรกิจตามขั้นตอนหลักดังนี้:\n\n"
                 "1. Business Info\n"
                 "2. SWOT Analysis\n"
-                "3. Vision / Mission / Objectives\n"
-                "4. Strategy\n"
-                "5. Marketing Plan\n"
-                "6. Financial Analysis\n"
-                "7. Executive Summary\n\n"
+                "3. SWOT Strategic Analysis\n"
+                "4. Vision / Mission / Objectives\n"
+                "5. Strategy Matrix\n"
+                "6. Marketing Plan\n"
+                "7. Financial Analysis\n"
+                "8. Executive Summary\n\n"
                 "ขั้นแรก กรุณาให้ข้อมูลธุรกิจเบื้องต้น เช่น\n"
                 "- ชื่อธุรกิจ\n"
                 "- ประเภทธุรกิจ\n"
